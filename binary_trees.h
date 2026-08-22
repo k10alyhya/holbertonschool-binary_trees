@@ -21,6 +21,7 @@ struct binary_tree_s
 
 typedef struct binary_tree_s binary_tree_t;
 typedef struct binary_tree_s bst_t;
+typedef struct binary_tree_s avl_t;
 
 
 /* Task 0 */
@@ -57,4 +58,5 @@ bst_t *bst_search(const bst_t *tree, int value);
 bst_t *bst_search(const bst_t *tree, int value);
 bst_t *bst_remove(bst_t *root, int value);
 int binary_tree_is_avl(const binary_tree_t *tree);
+avl_t *avl_insert(avl_t **tree, int value);
 #endif /* BINARY_TREES_H */
